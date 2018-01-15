@@ -72,7 +72,7 @@ $(".fa-plus").click(function(){
 
 $("document").ready(function () {
 
-	$("#box1").on("keyup", function ()
+	$("#box").on("keyup", function ()
 	{               		        	
 		var searchText = $(this).val();
 		searchText = searchText.toLowerCase();
@@ -84,54 +84,5 @@ $("document").ready(function () {
 			$(this).toggle(showCurrentLi);
         });  
 	});
-});     
-$("document").ready(function () {
-
-	$("#box2").on("keyup", function ()
-	{               		        	
-		var searchText = $(this).val();
-		searchText = searchText.toLowerCase();
-		searchText = searchText.replace(/\s+/g, '');
-		$('.second > li').each(function()
-		{
-			var currentLiText = $(this).text(),      
-			showCurrentLi = ((currentLiText.toLowerCase()).replace(/\s+/g, '')).indexOf(searchText) !== -1;
-			$(this).toggle(showCurrentLi);
-        });  
-	});
-});   
-
-$("document").ready(function () {
-
-	$("#box3").on("keyup", function ()
-	{               		        	
-		var searchText = $(this).val();
-		searchText = searchText.toLowerCase();
-		searchText = searchText.replace(/\s+/g, '');
-		$('.third > li').each(function()
-		{
-			var currentLiText = $(this).text(),      
-			showCurrentLi = ((currentLiText.toLowerCase()).replace(/\s+/g, '')).indexOf(searchText) !== -1;
-			$(this).toggle(showCurrentLi);
-        });  
-	});
 });                 					
-           
-$("document").ready(function () {
-
-	$("#box4").on("keyup", function ()
-	{               		        	
-		var searchText = $(this).val();
-		searchText = searchText.toLowerCase();
-		searchText = searchText.replace(/\s+/g, '');
-		$('.fourth > li').each(function()
-		{
-			var currentLiText = $(this).text(),      
-			showCurrentLi = ((currentLiText.toLowerCase()).replace(/\s+/g, '')).indexOf(searchText) !== -1;
-			$(this).toggle(showCurrentLi);
-        });  
-	});
-});                 					
-           		   
-                     					
-                
+                     
